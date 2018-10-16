@@ -1,0 +1,135 @@
+#include <map>
+#include <string>
+
+auto vkCodeList = []()->decltype(vkCodeList) {
+	std::map< int, std::string> vkCodeList;
+	for (int i = 0x00; i <= 0xFF; i++)
+		vkCodeList.emplace(i, "not defined" + i);
+#pragma region define
+	vkCodeList[0x01] = "Left mouse";
+	vkCodeList[0x02] = "Right mouse";
+	vkCodeList[0x03] = "Control-break processing";
+	vkCodeList[0x04] = "Middle mouse";
+	vkCodeList[0x05] = "X1 mouse";
+	vkCodeList[0x06] = "X2 mouse";
+	vkCodeList[0x08] = "BACKSPACE";
+	vkCodeList[0x09] = "TAB";
+	vkCodeList[0x0C] = "CLEAR";
+	vkCodeList[0x0D] = "ENTER";
+	vkCodeList[0x10] = "SHIFT";
+	vkCodeList[0x11] = "CTRL";
+	vkCodeList[0x12] = "ALT";
+	vkCodeList[0x13] = "PAUSE";
+	vkCodeList[0x14] = "CAPS LOCK";
+	vkCodeList[0x15] = "Korean/english";
+	vkCodeList[0x19] = "chinese";
+	vkCodeList[0x1B] = "ESC";
+	vkCodeList[0x20] = "SPACE BAR";
+	vkCodeList[0x21] = "PAGE UP";
+	vkCodeList[0x22] = "PAGE DOWN";
+	vkCodeList[0x23] = "END";
+	vkCodeList[0x24] = "HOME";
+	vkCodeList[0x25] = "LEFT ARROW";
+	vkCodeList[0x26] = "UP ARROW";
+	vkCodeList[0x27] = "RIGHT ARROW";
+	vkCodeList[0x28] = "DOWN ARROW";
+	vkCodeList[0x29] = "SELECT";
+	vkCodeList[0x2A] = "PRINT";
+	vkCodeList[0x2B] = "EXECUTE";
+	vkCodeList[0x2C] = "PRINT SCREEN";
+	vkCodeList[0x2D] = "INSERT";
+	vkCodeList[0x2E] = "DELETE";
+	vkCodeList[0x2F] = "HELP";
+	vkCodeList[0x30] = "0";
+	vkCodeList[0x31] = "1";
+	vkCodeList[0x32] = "2";
+	vkCodeList[0x33] = "3";
+	vkCodeList[0x34] = "4";
+	vkCodeList[0x35] = "5";
+	vkCodeList[0x36] = "6";
+	vkCodeList[0x37] = "7";
+	vkCodeList[0x38] = "8";
+	vkCodeList[0x39] = "9";
+	vkCodeList[0x41] = "A";
+	vkCodeList[0x42] = "B";
+	vkCodeList[0x43] = "C";
+	vkCodeList[0x44] = "D";
+	vkCodeList[0x45] = "E";
+	vkCodeList[0x46] = "F";
+	vkCodeList[0x47] = "G";
+	vkCodeList[0x48] = "H";
+	vkCodeList[0x49] = "I";
+	vkCodeList[0x4A] = "J";
+	vkCodeList[0x4B] = "K";
+	vkCodeList[0x4C] = "L";
+	vkCodeList[0x4D] = "M";
+	vkCodeList[0x4E] = "N";
+	vkCodeList[0x4F] = "O";
+	vkCodeList[0x50] = "P";
+	vkCodeList[0x51] = "Q";
+	vkCodeList[0x52] = "R";
+	vkCodeList[0x53] = "S";
+	vkCodeList[0x54] = "T";
+	vkCodeList[0x55] = "U";
+	vkCodeList[0x56] = "V";
+	vkCodeList[0x57] = "W";
+	vkCodeList[0x58] = "X";
+	vkCodeList[0x59] = "Y";
+	vkCodeList[0x5A] = "Z";
+	vkCodeList[0x5B] = "Left Windows key";
+	vkCodeList[0x5C] = "Right Windows key";
+	vkCodeList[0x60] = "Numeric keypad 0";
+	vkCodeList[0x61] = "Numeric keypad 1";
+	vkCodeList[0x62] = "Numeric keypad 2";
+	vkCodeList[0x63] = "Numeric keypad 3";
+	vkCodeList[0x64] = "Numeric keypad 4";
+	vkCodeList[0x65] = "Numeric keypad 5";
+	vkCodeList[0x66] = "Numeric keypad 6";
+	vkCodeList[0x67] = "Numeric keypad 7";
+	vkCodeList[0x68] = "Numeric keypad 8";
+	vkCodeList[0x69] = "Numeric keypad 9";
+	vkCodeList[0x70] = "F1";
+	vkCodeList[0x71] = "F2";
+	vkCodeList[0x72] = "F3";
+	vkCodeList[0x73] = "F4";
+	vkCodeList[0x74] = "F5";
+	vkCodeList[0x75] = "F6";
+	vkCodeList[0x76] = "F7";
+	vkCodeList[0x77] = "F8";
+	vkCodeList[0x78] = "F9";
+	vkCodeList[0x79] = "F10";
+	vkCodeList[0x7A] = "F11";
+	vkCodeList[0x7B] = "F12";
+	vkCodeList[0x90] = "NUM LOCK";
+	vkCodeList[0x91] = "SCROLL LOCK";
+	vkCodeList[0xA0] = "Left SHIFT";
+	vkCodeList[0xA1] = "Right SHIFT";
+	vkCodeList[0xA2] = "Left CONTROL";
+	vkCodeList[0xA3] = "Right CONTROL";
+	vkCodeList[0xA4] = "Left Alt";
+	vkCodeList[0xAD] = "Volume Mute key";
+	vkCodeList[0xAE] = "Volume Down key";
+	vkCodeList[0xAF] = "Volume Up key";
+	vkCodeList[0xBA] = ";";
+	vkCodeList[0xBB] = "=";
+	vkCodeList[0xBC] = ",";
+	vkCodeList[0xBD] = "-";
+	vkCodeList[0xBE] = ".";
+	vkCodeList[0xBF] = "/";
+	vkCodeList[0xC0] = "`";
+	vkCodeList[0xDB] = "[";
+	vkCodeList[0xDC] = "\\";
+	vkCodeList[0xDD] = "]";
+	vkCodeList[0xDE] = "'";
+#pragma endregion
+	return vkCodeList;
+}();
+
+auto reverseVkCodeList = [](auto& vkCodeList)->decltype(reverseVkCodeList) {
+	std::map<std::string, int> reverseVkCodeList;
+	for (int i = 0x00; i <= 0xFF; i++)
+		reverseVkCodeList[vkCodeList[i]] = i;
+
+	return reverseVkCodeList;
+}(vkCodeList);
+
